@@ -1,0 +1,6 @@
+[user]
+	name = Belal Samy
+	email = 38237387+belalsamyyy@users.noreply.github.com
+[core]
+	editor = code --wait
+	autocrlf = input
