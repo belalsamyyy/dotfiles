@@ -7,8 +7,8 @@
 # create symlinks ( automatically )
 # ----------------------
 - link:
-    ~/.zshrc: zshrc
-
+    ~/.zshrc: 
+    ~/.gitconfig: 
 
 # create directories
 # ----------------------
@@ -18,5 +18,10 @@
 
 # run scripts 
 # ----------------------
-# - shell:
+- shell:
 #  - [git submodule update --init --recursive, Installing submodules]
+   - sleep 2
+   - 
+    command: ./test.zsh
+    stdout: true 
+    stderr: true 
