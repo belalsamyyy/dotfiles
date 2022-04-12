@@ -22,7 +22,8 @@ alias ls='ls -lAFh'
 
 # Add locations to $PATH variable
 # -----------------------
-alias ls='ls -lAFh'
+# Add Visual Studio Code (code)
+export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
 
 # write handy functions 
@@ -34,3 +35,8 @@ function mkcd() {
 
 # use ZSH Plugins 
 # -----------------------
+
+
+# and other surprises ...
+# -----------------------
+
