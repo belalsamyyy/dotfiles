@@ -3,6 +3,9 @@
 # syntax highlighting for man pages using bat 
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
+# disable gatekeeper for casks(apps) automatically
+export HOMEBREW_CASK_OPTS="--no-quarantine" 
+
 # change ZSH Options 
 # -----------------------
 
