@@ -1,7 +1,7 @@
 # set Variables
 # -----------------------
 # syntax highlighting for man pages using bat 
-export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+#export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
 # disable gatekeeper for casks(apps) automatically
 export HOMEBREW_CASK_OPTS="--no-quarantine" 
@@ -24,6 +24,8 @@ RPROMPT='%*'
 # alias ls='ls -lAFh'
 alias ls='exa -laFh --git'
 alias exa='exa -laFh --git'
+alias man='batman'
+alias dump='brew bundle dump --force --describe'
 
 
 # Add locations to $PATH variable
