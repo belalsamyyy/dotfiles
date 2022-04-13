@@ -26,8 +26,7 @@ alias ls='exa -laFh --git'
 alias exa='exa -laFh --git'
 alias man='batman'
 alias dump='brew bundle dump --force --describe'
-
-
+ 
 # Add locations to $PATH variable
 # -----------------------
 # Add Visual Studio Code (code)

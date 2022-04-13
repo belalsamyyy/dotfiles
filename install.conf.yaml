@@ -9,7 +9,10 @@
 - link:
     ~/.zshrc: 
     ~/.gitconfig: 
-
+    ~/.config/bat: 
+      create: true 
+      path: config/bat
+ 
 # create directories
 # ----------------------
 - create:
