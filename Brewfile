@@ -37,6 +37,8 @@ brew "httpie"
 brew "imagemagick"
 # Mac App Store command-line interface
 brew "mas"
+# Free (GNU) replacement for the Pico text editor
+brew "nano"
 # Development kit for the Java programming language
 brew "openjdk"
 # Python version management
@@ -53,7 +55,6 @@ brew "eth-p/software/bat-extras"
 cask "alfred"
 # Client for the Dropbox cloud storage service
 cask "dropbox"
-
 mas "Asset Catalog Creator", id: 866571115
 mas "Developer", id: 640199958
 mas "GarageBand", id: 682658836
