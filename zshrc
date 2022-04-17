@@ -28,16 +28,19 @@ alias ls='exa -laFh --git'
 alias exa='exa -laFh --git'
 alias man='batman'
 alias dump='brew bundle dump --force --describe'
- 
+alias trail='<<<${(F)path}'
+
 # Add locations to $PATH variable
 # -----------------------
 # Add Visual Studio Code (code)
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
-
 # write handy functions 
 # -----------------------
 function mkcd() {
+ # $@ = all parameters 
+ # $n = nth parameter
+ # $_ = last parameter
  mkdir -p "$@" && cd "$_";
 }
 
