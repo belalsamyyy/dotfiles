@@ -8,6 +8,8 @@ echo 'Hello from .zshrc'
 # disable gatekeeper for casks(apps) automatically
 export HOMEBREW_CASK_OPTS="--no-quarantine" 
 
+export NULLCMD=bat 
+
 # change ZSH Options 
 # -----------------------
 
@@ -28,7 +30,18 @@ alias ls='exa -laFh --git'
 alias exa='exa -laFh --git'
 alias man='batman'
 alias dump='brew bundle dump --force --describe'
-alias trail='<<<${(F)path}'
+
+# PATH = single value seperated with colons | path = array of values 
+# ${path} = command subtitution(expantion), but in this case its more like (parameter expansion)
+# ${#VARIABLE} = # return count of the result
+# {()} = () is flags, for example (C) = capitalize the result
+# (F) = seperate items in an array in new lines, you can use 2 flags togeter (CF)
+# <<< (hereword) = instead of << (heredoc), we have 3 its another form of redirection (one line) instead of multiple lines
+# cat is the default for heredoc = cat << OR << , same for hereword
+# but we perfer bat over cat, we can specify it or set NULLCMD to bat, to change the default
+# export NULLCMD=bat
+
+alias trail='bat<<<${(F)path}'
 
 # Add locations to $PATH variable
 # -----------------------
