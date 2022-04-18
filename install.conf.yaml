@@ -27,4 +27,10 @@
     command: ./setup_homebrew.sh
     stdin: true
     stdout: true 
+    stderr: true
+     
+   - 
+    command: ./setup_node.sh
+    stdin: true
+    stdout: true 
     stderr: true 

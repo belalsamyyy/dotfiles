@@ -35,8 +35,12 @@ brew "git-lfs"
 brew "httpie"
 # Tools and libraries to manipulate images in many formats
 brew "imagemagick"
+# Pager program similar to more
+brew "less"
 # Mac App Store command-line interface
 brew "mas"
+# Node version management
+brew "n"
 # Free (GNU) replacement for the Pico text editor
 brew "nano"
 # Development kit for the Java programming language
@@ -55,6 +59,8 @@ brew "eth-p/software/bat-extras"
 cask "alfred"
 # Client for the Dropbox cloud storage service
 cask "dropbox"
+# Web browser
+cask "firefox"
 mas "Asset Catalog Creator", id: 866571115
 mas "Developer", id: 640199958
 mas "GarageBand", id: 682658836
