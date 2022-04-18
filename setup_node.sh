@@ -15,12 +15,18 @@ else
 fi 
 
 # Install Global NPM Packags 
+# ---------------------------
+
+# example for dev tools 
 # npm install --global firebase-tools
 # npm install --global @angular/cli
 # npm install --global @ionic/cli
 # npm install --global typescript   
 # npm install --global json-server
 # npm install --global http-server
+
+# example for everyday tools
+npm install --global trash-cli  
 
 echo "Global NPM Packages installed: "
 npm list --global --depth=0 

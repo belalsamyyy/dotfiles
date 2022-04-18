@@ -46,6 +46,7 @@ alias dump='brew bundle dump --force --describe'
 # export NULLCMD=bat
 
 alias trail='bat<<<${(F)path}'
+alias rm=trash
 
 # Add locations to $PATH variable
 # -----------------------
