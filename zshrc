@@ -8,7 +8,11 @@ echo 'Hello from .zshrc'
 # disable gatekeeper for casks(apps) automatically
 export HOMEBREW_CASK_OPTS="--no-quarantine" 
 
+# change default nullcmd from cat to bat 
 export NULLCMD=bat 
+
+export N_PREFIX="$HOME/.n"
+export PREFIX="$N_PREFIX"
 
 # change ZSH Options 
 # -----------------------
@@ -48,9 +52,13 @@ alias trail='bat<<<${(F)path}'
 # Add Visual Studio Code (code)
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
+# Add N to $PATH variable
+export PATH="$PATH:$N_PREFIX/bin"
+
 # write handy functions 
 # -----------------------
 function mkcd() {
+ # $0 = current process
  # $@ = all parameters 
  # $n = nth parameter
  # $_ = last parameter
